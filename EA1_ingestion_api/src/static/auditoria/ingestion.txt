@@ -1,0 +1,10 @@
+AUDITORIA DE INGESTION DE DATOS
+Fecha: 2026-08-31T09:55:59
+API: https://dummyjson.com/products?limit=0
+Registros extraidos: 194
+Registros almacenados: 194
+ID duplicados: 0
+Registros con campos obligatorios vacios: 0
+ID faltantes en SQLite: Ninguno
+ID adicionales en SQLite: Ninguno
+Resultado: EXITOSO

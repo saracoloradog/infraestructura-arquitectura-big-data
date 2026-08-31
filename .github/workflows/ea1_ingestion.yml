@@ -1,0 +1,36 @@
+name: EA1 - Ingestion de datos
+
+on:
+  push:
+    paths:
+      - "EA1_ingestion_api/**"
+      - ".github/workflows/ea1_ingestion.yml"
+  workflow_dispatch:
+
+jobs:
+  ingestion:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Descargar repositorio
+        uses: actions/checkout@v4
+
+      - name: Configurar Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Instalar dependencias
+        run: pip install -r EA1_ingestion_api/requirements.txt
+
+      - name: Ejecutar ingesta
+        run: python EA1_ingestion_api/src/ingestion.py
+
+      - name: Publicar evidencias
+        uses: actions/upload-artifact@v4
+        with:
+          name: evidencias-ea1
+          path: |
+            EA1_ingestion_api/src/db/ingestion.db
+            EA1_ingestion_api/src/xlsx/ingestion.xlsx
+            EA1_ingestion_api/src/static/auditoria/ingestion.txt
+
