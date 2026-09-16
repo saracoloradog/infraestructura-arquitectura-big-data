@@ -1,0 +1,29 @@
+REPORTE DE LIMPIEZA DE DATOS
+Fecha: 2026-09-16T09:41:00
+Fuente: ingestion.db, tabla products
+
+ESTADO INICIAL
+Registros: 194
+Duplicados por ID: 0
+Valores nulos: 92
+Marcas faltantes: 92
+Precio mínimo: 0.79
+Precio máximo: 36999.99
+Precio promedio: 1570.10
+Stock promedio: 50.41
+Calificación promedio: 3.80
+
+OPERACIONES REALIZADAS
+Duplicados eliminados: 0
+Marcas imputadas con 'Sin marca': 92
+Conversión de ID y stock a enteros.
+Conversión de precio, descuento, calificación y peso a valores numéricos.
+Estandarización de textos y categorías en minúscula.
+Control de rangos para precio, descuento, calificación, stock y peso.
+Precios atípicos identificados por categoría: 12
+Cálculo del precio después del descuento.
+
+ESTADO FINAL
+Registros: 194
+Valores nulos: 0
+Resultado: LIMPIEZA EXITOSA
