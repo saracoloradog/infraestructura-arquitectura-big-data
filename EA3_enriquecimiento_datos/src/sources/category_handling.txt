@@ -1,0 +1,25 @@
+category|handling_note
+beauty|Evitar exposición directa al calor
+fragrances|Proteger envases de vidrio
+furniture|Verificar medidas antes del despacho
+groceries|Revisar fecha de vencimiento
+home-decoration|Usar protección contra golpes
+kitchen-accessories|Separar elementos cortantes
+laptops|Despacho con sello de seguridad
+mens-shirts|Empaque textil estándar
+mens-shoes|Conservar en caja rígida
+mens-watches|Despacho con sello de seguridad
+mobile-accessories|Empaque antiestático
+motorcycle|Transporte especializado
+skin-care|Evitar exposición directa al calor
+smartphones|Despacho con sello de seguridad
+sports-accessories|Empaque estándar
+sunglasses|Usar protección contra golpes
+tablets|Despacho con sello de seguridad
+tops|Empaque textil estándar
+vehicle|Transporte especializado
+womens-bags|Conservar la forma del producto
+womens-dresses|Empaque textil estándar
+womens-jewellery|Despacho con sello de seguridad
+womens-shoes|Conservar en caja rígida
+womens-watches|Despacho con sello de seguridad

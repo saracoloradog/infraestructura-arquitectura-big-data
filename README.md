@@ -6,3 +6,4 @@ Repositorio de evidencias del curso.
 
 - [EA1 - Ingestión de datos desde un API](EA1_ingestion_api/)
 - [EA2 - Preprocesamiento y limpieza de datos](EA2_limpieza_datos/)
+- [EA3 - Enriquecimiento de datos](EA3_enriquecimiento_datos/)

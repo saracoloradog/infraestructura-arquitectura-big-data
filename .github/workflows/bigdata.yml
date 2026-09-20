@@ -1,14 +1,14 @@
-name: EA2 - Limpieza de datos
+name: EA3 - Enriquecimiento de datos
 
 on:
   push:
     paths:
-      - "EA2_limpieza_datos/**"
+      - "EA3_enriquecimiento_datos/**"
       - ".github/workflows/bigdata.yml"
   workflow_dispatch:
 
 jobs:
-  limpieza:
+  enriquecimiento:
     runs-on: ubuntu-latest
     steps:
       - name: Descargar repositorio
@@ -20,16 +20,15 @@ jobs:
           python-version: "3.12"
 
       - name: Instalar dependencias
-        run: pip install -r EA2_limpieza_datos/requirements.txt
+        run: pip install -r EA3_enriquecimiento_datos/requirements.txt
 
-      - name: Ejecutar limpieza
-        run: python EA2_limpieza_datos/src/cleaning.py
+      - name: Ejecutar enriquecimiento
+        run: python EA3_enriquecimiento_datos/src/enrichment.py
 
       - name: Publicar evidencias
         uses: actions/upload-artifact@v4
         with:
-          name: evidencias-ea2
+          name: evidencias-ea3
           path: |
-            EA2_limpieza_datos/src/xlsx/cleaned_data.xlsx
-            EA2_limpieza_datos/src/static/auditoria/cleaning_report.txt
-
+            EA3_enriquecimiento_datos/src/xlsx/enriched_data.xlsx
+            EA3_enriquecimiento_datos/src/static/auditoria/enrichment_report.txt

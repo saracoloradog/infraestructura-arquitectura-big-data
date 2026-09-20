@@ -1,0 +1,30 @@
+name: EA2 - Limpieza de datos
+
+on:
+  push:
+    paths:
+      - "EA2_limpieza_datos/**"
+      - ".github/workflows/ea2_cleaning.yml"
+  workflow_dispatch:
+
+jobs:
+  limpieza:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Descargar repositorio
+        uses: actions/checkout@v4
+      - name: Configurar Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Instalar dependencias
+        run: pip install -r EA2_limpieza_datos/requirements.txt
+      - name: Ejecutar limpieza
+        run: python EA2_limpieza_datos/src/cleaning.py
+      - name: Publicar evidencias
+        uses: actions/upload-artifact@v4
+        with:
+          name: evidencias-ea2
+          path: |
+            EA2_limpieza_datos/src/xlsx/cleaned_data.xlsx
+            EA2_limpieza_datos/src/static/auditoria/cleaning_report.txt

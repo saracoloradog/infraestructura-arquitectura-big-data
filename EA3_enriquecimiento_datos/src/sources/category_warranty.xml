@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<categories>
+  <category><category>beauty</category><warranty_months>1</warranty_months></category>
+  <category><category>fragrances</category><warranty_months>1</warranty_months></category>
+  <category><category>furniture</category><warranty_months>12</warranty_months></category>
+  <category><category>groceries</category><warranty_months>0</warranty_months></category>
+  <category><category>home-decoration</category><warranty_months>6</warranty_months></category>
+  <category><category>kitchen-accessories</category><warranty_months>6</warranty_months></category>
+  <category><category>laptops</category><warranty_months>24</warranty_months></category>
+  <category><category>mens-shirts</category><warranty_months>1</warranty_months></category>
+  <category><category>mens-shoes</category><warranty_months>3</warranty_months></category>
+  <category><category>mens-watches</category><warranty_months>12</warranty_months></category>
+  <category><category>mobile-accessories</category><warranty_months>12</warranty_months></category>
+  <category><category>motorcycle</category><warranty_months>24</warranty_months></category>
+  <category><category>skin-care</category><warranty_months>1</warranty_months></category>
+  <category><category>smartphones</category><warranty_months>24</warranty_months></category>
+  <category><category>sports-accessories</category><warranty_months>6</warranty_months></category>
+  <category><category>sunglasses</category><warranty_months>6</warranty_months></category>
+  <category><category>tablets</category><warranty_months>24</warranty_months></category>
+  <category><category>tops</category><warranty_months>1</warranty_months></category>
+  <category><category>vehicle</category><warranty_months>36</warranty_months></category>
+  <category><category>womens-bags</category><warranty_months>3</warranty_months></category>
+  <category><category>womens-dresses</category><warranty_months>1</warranty_months></category>
+  <category><category>womens-jewellery</category><warranty_months>6</warranty_months></category>
+  <category><category>womens-shoes</category><warranty_months>3</warranty_months></category>
+  <category><category>womens-watches</category><warranty_months>12</warranty_months></category>
+</categories>

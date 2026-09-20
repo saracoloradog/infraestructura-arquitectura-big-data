@@ -1,0 +1,56 @@
+REPORTE DE ENRIQUECIMIENTO DE DATOS
+Fecha: 2026-09-20T15:59:51
+Dataset base: cleaned_data.xlsx
+Registros base: 194
+Registros enriquecidos: 194
+Columnas iniciales: 14
+Columnas finales: 23
+Clave de integración: category
+
+CRUCES REALIZADOS
+- JSON - segmentos (category_segments.json)
+  Registros de referencia: 24
+  Coincidencias: 194
+  Sin coincidencia: 0
+  Claves duplicadas descartadas: 0
+  Columnas agregadas: segment
+- XLSX - proveedores (category_suppliers.xlsx)
+  Registros de referencia: 24
+  Coincidencias: 194
+  Sin coincidencia: 0
+  Claves duplicadas descartadas: 0
+  Columnas agregadas: supplier_region, replenishment_days
+- CSV - impuestos (category_tax.csv)
+  Registros de referencia: 24
+  Coincidencias: 194
+  Sin coincidencia: 0
+  Claves duplicadas descartadas: 0
+  Columnas agregadas: tax_rate
+- XML - garantías (category_warranty.xml)
+  Registros de referencia: 24
+  Coincidencias: 194
+  Sin coincidencia: 0
+  Claves duplicadas descartadas: 0
+  Columnas agregadas: warranty_months
+- HTML - envíos (category_shipping.html)
+  Registros de referencia: 24
+  Coincidencias: 194
+  Sin coincidencia: 0
+  Claves duplicadas descartadas: 0
+  Columnas agregadas: shipping_class
+- TXT - manejo (category_handling.txt)
+  Registros de referencia: 24
+  Coincidencias: 194
+  Sin coincidencia: 0
+  Claves duplicadas descartadas: 0
+  Columnas agregadas: handling_note
+
+TRANSFORMACIONES ADICIONALES
+- Normalización de la categoría a minúsculas y sin espacios externos.
+- Cálculo de price_with_tax a partir del precio con descuento y la tasa.
+- Identificación de restock_priority para productos con poco stock y reposición lenta.
+
+RESULTADO
+Valores nulos en las columnas agregadas: 0
+Productos con prioridad de reposición: 15
+Resultado: ENRIQUECIMIENTO EXITOSO
